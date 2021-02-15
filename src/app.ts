@@ -8,6 +8,11 @@ app.get('/', (req, res) => {
   res.send('jerrin kallukalam testing!!');
 });
 
+app.get('/users', (req, res) => {
+  res.send(JSON.stringify({user: ['a', 'b', 'c']}));
+});
+
+
 app.listen(port, err => {
   if (err) {
     return console.error(err);
