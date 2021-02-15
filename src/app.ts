@@ -2,10 +2,10 @@
 import express from 'express';
 
 const app = express();
-const port = parseInt(process.env.PORT, 10) || '3000'
+const port = process.env.PORT || '3000'
 
 app.get('/', (req, res) => {
-  res.send('jerrin testing!!');
+  res.send('jerrin kall testing!!');
 });
 
 app.listen(port, err => {

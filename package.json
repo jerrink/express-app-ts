@@ -4,7 +4,8 @@
   "description": "node project",
   "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js"
+    "start": "node dist/app.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
