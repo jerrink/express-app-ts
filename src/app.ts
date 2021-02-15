@@ -24,6 +24,10 @@ app.get('/cities', (req, res) => {
   res.send(JSON.stringify({cities: ['NYC', 'Boston', 'Seattle', 'Miami', 'Tampa']}));
 });
 
+app.get('/api/cities', (req, res) => {
+  res.send(JSON.stringify({cities: ['LA', 'NYC', 'Boston', 'Seattle', 'Miami', 'Tampa']}));
+});
+
 app.listen(port, err => {
   if (err) {
     return console.error(err);
